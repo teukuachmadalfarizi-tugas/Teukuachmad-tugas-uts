@@ -1,1 +1,0 @@
-# Teukuachmad-tugas-uts
