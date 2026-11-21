@@ -1,0 +1,49 @@
+class kawasaki:
+    pass
+class motor:
+    pass
+
+kawasaki1 = kawasaki()
+kawasaki2 = kawasaki()
+
+print(type(kawasaki1))
+print(type(kawasaki2))
+
+motor1 = motor()
+motor2 = motor()
+
+print(type(motor1))
+print(type(motor2))
+
+class Mahasiswa :
+    nim = 0
+    nama = ""
+
+    def perkenalan(self):
+        print(f"halo nama saya {self.nama}")
+
+    def hello (self, nama):
+        print(f"hello {nama},nama saya {self.nama}")
+
+
+mahasiswa = Mahasiswa()
+mahasiswa.nama = "teuku"
+mahasiswa.perkenalan()
+mahasiswa.hello("esta")
+
+
+#instance atribute
+
+mahasiswa1 = Mahasiswa()
+mahasiswa1.nim = 123456
+mahasiswa1.nama = "teuku"
+
+print(mahasiswa1.nim)
+print(mahasiswa1.nama)
+
+mahasiswa2 = Mahasiswa()
+mahasiswa2.nim = ("123456")
+mahasiswa2.nama = "esta"
+
+print(mahasiswa2.nim)
+print(mahasiswa2.nama)
