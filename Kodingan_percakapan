@@ -1,0 +1,52 @@
+class Teman:
+    def __init__(self, nama, hobi):
+        self.nama = nama
+        self.hobi = hobi
+
+    def sapa(self, nama_lawan_bicara):
+        print(f"{self.nama}: Halo {nama_lawan_bicara}! Lagi sibuk gak sekarang?")
+
+    def tanya_kabar(self):
+        print(f"{self.nama}: Gimana kabarnya akhir-akhir ini,baik?")
+
+    def jawab_kabar(self, kabar):
+        print(f"{self.nama}: Kabarku {kabar} juga dong, thanks ya udah nanya!")
+
+    def cerita_hobi(self):
+        print(f"{self.nama}: Kalau ada waktu luang, aku biasanya suka {self.hobi}.")
+
+    def ajak_nongkrong(self, tempat):
+        print(f"{self.nama}: Nanti sore ada waktu gak? Nongkrong di {tempat} yuk!")
+
+    def tanggapi_ajaran(self, setuju=True):
+        if setuju:
+            print(f"{self.nama}: Wah boleh banget! Kebetulan aku lagi pengen santai juga.")
+      
+    def pamitan(self):
+        print(f"{self.nama}: Oke deh, sampai ketemu nanti ya! Dah~")
+
+
+# --- Program Utama (Objek dan Percakapan) ---
+
+# Membuat dua objek dari kelas Teman
+teman1 = Teman("Teuku", "main game dan motoran si")
+teman2 = Teman("Iyung", "fotografi si")
+
+print("=== PERCAKAPAN DI LALU LINTAS KAFE ===")
+
+# Jalannya percakapan panjang menggunakan metode kelas
+teman1.sapa(teman2.nama)
+print(f"{teman2.nama}: iya {teman1.nama}! Lagi santai aja si abis kelar urusan.")
+
+teman1.tanya_kabar()
+print(f"{teman2.nama}: Alhamdulillah baik! Kamu sendiri gimana,aman?")
+teman1.jawab_kabar("baik")
+
+teman1.cerita_hobi()
+teman2.cerita_hobi()
+
+teman1.ajak_nongkrong("Kopi Kenangan")
+teman2.tanggapi_ajaran(setuju=True)
+
+teman1.pamitan()
+print(f"{teman2.nama}: Oke Teuku, see you!")
